@@ -1,0 +1,45 @@
+header{
+    margin: 0;  
+    background-color:#DADADA;
+    border: #DADADA;
+   
+}
+
+.Header_Wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+
+.wrapper {
+    
+    /* Its Consuming the entire width of the browser, we want wrapper to have white space on the left, middle and right */
+    /* The pixel value between the left space and the right space*/
+    max-width: 1200px;
+    /* Top and bottom is 0 ( no white space at the top and bottom ) */
+    /*  To Center it: Setting left and right to auto will automatically center it.  */
+    margin: 0 auto;
+     /* margin-top: 11em;
+    margin-bottom: auto;
+   Entire Page Color */
+    /*background-color:#F4EFEF;*/
+}
+
+
+footer{
+    margin: 0;  
+    background-color:#131F22 ;
+    border: #131F22   ;
+    border-top: 8px solid #7D1538 ;
+    margin-top: 5em;
+    /*background-color:#F4EFEF;
+    border: #F4EFEF;*/
+    
+}
+
+.Footer_Wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
