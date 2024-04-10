@@ -16,7 +16,7 @@ jobs:
     name: Build container
     runs-on: ubuntu-latest
     steps:
-      - name: "☁️ checkout repository"
+      - name: "☁️ my-portfolio repository"
         uses: actions/checkout@v2
 
       - name: "🔧 setup buildx"
