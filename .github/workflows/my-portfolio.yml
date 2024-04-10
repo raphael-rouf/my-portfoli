@@ -13,7 +13,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: "☁️ checkout repository"
+      - name: "☁️ my-portfolio repository"
         uses: actions/checkout@v2
 
       - name: "🔧 setup node"
@@ -27,7 +27,7 @@ jobs:
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
 
-      - name: "📦 build Storybook"
+      - name: "📦 build my-portfolio"
         run: npx build-storybook
 
       - name: "🚀 deploy static"
