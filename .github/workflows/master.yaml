@@ -34,7 +34,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       run: |
-        ngh --dir dist/my-portfolio
+         npx angular-cli-ghpages --dir=dist/my-portfolio
         
       env:
         CI: true
