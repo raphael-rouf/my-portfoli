@@ -26,16 +26,12 @@ jobs:
     - name: Install angular-cli-ghpages
       run: npm install -g angular-cli-ghpages@2.0.0-beta.2
 
-    - name: Install ngh
-      run: npm install -g angular-cli-ghpages
-
     - name: Build Angular App
       run: npm run build
 
-    - name: Deploy to GitHub Pages
+    - name: Deploy to gh pages
       run: |
-         npx angular-cli-ghpages --dir=dist/my-portfolio
-        
+        npx angular-cli-ghpages --dir=dist/my-portfolio
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
