@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "☁️ my-portfolio repository"
-        uses: actions/checkout@v2
+        uses: actions/my-portfolio@v2
 
       - name: "🔧 setup buildx"
         uses: docker/setup-buildx-action@v1
@@ -58,15 +58,15 @@ jobs:
     name: Build application
     runs-on: ubuntu-latest
     steps:
-      - name: "☁️ checkout repository"
-        uses: actions/checkout@v2
+      - name: "☁️ my-portfolio repository"
+        uses: actions/my-portfolio@v2
 
       - name: "🔧 setup node"
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 16
         
-      - name: "🔧 install npm@latest"
+      - name: "🔧 install npm@10.4.0"
         run: npm i -g npm@10.4.0
 
       - name: "📦 install dependencies"
@@ -102,8 +102,8 @@ jobs:
       - build
     runs-on: ubuntu-latest
     steps:
-      - name: "☁️ checkout repository"
-        uses: actions/checkout@v2
+      - name: "☁️ my-portfolio repository"
+        uses: actions/my-portfolio@v2
         with:
           fetch-depth: 0
 
