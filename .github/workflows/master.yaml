@@ -26,8 +26,11 @@ jobs:
     - name: Install angular-cli-ghpages
       run: npm install -g angular-cli-ghpages@2.0.0-beta.2
 
+    - name: Install ngh
+      run: npm install -g angular-cli-ghpages
+
     - name: Build Angular App
-      run: npm run build --base-href=/my-portfolio/
+      run: npm run build
 
     - name: Deploy to GitHub Pages
       run: |
