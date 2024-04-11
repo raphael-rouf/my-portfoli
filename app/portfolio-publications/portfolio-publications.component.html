@@ -1,0 +1,85 @@
+<section>
+    <div class="left-col">
+        <h1> My Publications.</h1>
+        <p class="subhead">These are my publications! They are within the field of <strong>Failure Detection & Prediction</strong>,
+            <strong>Performance Modeling</strong>, <strong>Chaos Engineering</strong> and <strong>Root Cause Analysis</strong> for Microservice Applications.
+            One of my favorite aspects of research is collaboration! I have worked with many masters, phD, postdoctoral
+            researchers and IBM researchers on various papers and projects. From this experience, I have learned to use many
+            industrial and open source tools and technologies!
+        </p>
+        <div class="cta-buttons">
+            <button  class="primary-cta" (click)="clicked2023Publication()">2023 Publications!</button> 
+            <button class="secondary-cta" (click)="clicked2024Publication()" >2024 Publication!</button> 
+            <!--<button [ngClass]="[buttonStyle]" (click)="PublicationYearSwitch()" class="secondary-cta"> Replace with 2024 Publications!</button>-->
+        </div> 
+        <!--
+        <div class="cta-buttons">
+            <a href="#" class="primary-cta"> 2023 Publications!</a>
+            <a href="#" class="secondary-cta"> 2024 Publications!</a>
+        </div>
+        -->
+        <div *ngIf="show2023">
+            <div class="proceeding proceeding2023">
+                <p class="publications">Proceedings 2023</p>
+                <ol>
+                    <li>
+                        <a href="https://dl.acm.org/doi/abs/10.5555/3615924.3623633">
+                            <p class="details"><strong>Models for Detecting Performance Anomalies and Identifying Root Causes in
+                                    Microservices Applications</strong></p>
+                        </a>
+                        <p class="details"><strong>Authors:</strong> Rouf Raphael, Rasolroveicy Mohammadreza, Ahuja Harit,
+                            Namrud Zakeya, Watts Ian, Sarda Komal, Litoiu Marin</p>
+                        <p class="details"><strong>Book:</strong> Proceedings of the 33rd Annual International Conference on
+                            Computer Science and Software Engineering</p>
+                    </li>
+                    <li><a href="https://dl.acm.org/doi/abs/10.5555/3615924.3615949">
+                            <p class="details"><strong>ADARMA auto-detection and auto-remediation of microservice anomalies by leveraging large language models</strong></p></a>
+                        <p class="details"><strong>Authors:</strong> Sarda Komal, Namrud Zakeya, Rouf Raphael, Ahuja Harit,Rasolroveicy Mohammadreza, Litoiu Marin, Shwartz Larisa, Watts Ian</p>
+                        <p class="details"><strong>Book:</strong> Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering</p>
+                    </li>
+                </ol>
+                </div>
+            </div>
+            <div *ngIf="show2024">
+            <div class="proceeding proceeding2024">
+                <p class="publications">Proceedings 2024</p>
+                <ol>
+                    <li><a href="#">
+                        <p class="details"><strong> InstantOps: A Joint Approach to System Failure Prediction and Root Cause Identification in Microservices Cloud-Native</strong></p></a>
+                        <p class="details"><strong>Authors:</strong> Raphael Rouf, Mohammadreza Rasolroveicy, Marin Litoiu, Seema Nagar, Prateeti Mohapatra, Pranjal Gupta, Ian Watts</p>
+                        <p class="details"><strong>Book:</strong> Proceedings of the 2024 ACM/SPEC International Conference on Performance Engineering</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    
+        <div class="right-col">
+            <div class="paper paper1"></div>
+        </div>
+</section>
+        <!--
+        <div class="proceeding proceeding2024">
+            <p class="publications">Proceedings 2024</p>
+            <ol>
+                <li><a href="#">
+                    <p class="details"><strong>Models for Detecting Performance Anomalies and Identifying Root Causes in Microservices Applications</strong></p></a>
+                    <p class="details"><strong>Authors:</strong> Rouf Raphael, Rasolroveicy Mohammadreza, Ahuja Harit, Namrud Zakeya, Watts Ian, Sarda Komal, Litoiu Marin</p>
+                    <p class="details"><strong>Book:</strong> Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering</p>
+                </li>
+                <li><a href="#">
+                    <p class="details"><strong>ADARMA auto-detection and auto-remediation of microservice anomalies by leveraging large language models</strong></p></a>
+                    <p class="details"><strong>Authors:</strong> Sarda Komal, Namrud Zakeya, Rouf Raphael, Ahuja Harit, Rasolroveicy Mohammadreza, Litoiu Marin, Shwartz Larisa, Watts Ian</p>
+                    <p class="details"><strong>Book:</strong> Proceedings of the 33rd Annual International Conference on Computer Science and Software Engineering</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="right-col">
+
+        <div class="paper paper1"></div>
+       
+    </div>-->
