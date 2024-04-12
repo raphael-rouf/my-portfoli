@@ -22,15 +22,16 @@ jobs:
         
     - name: Install Angular CLI               
       run: npm install -g @angular/cli
-        
+        ng version
+
     - name: Install Dependencies
       run: npm install
 
     - name: Add angular-cli-ghpages
-      run: npm install -g angular-cli-ghpages@2.0.0-beta.2
+      run: npm install -g angular-cli-ghpages
 
     - name: Build Angular App
-      run: npm run build && cp dist/my-portfolio/index.html dist/my-portfolio/404.html
+      run: npm run gh-build && cp dist/my-portfolio/index.html dist/my-portfolio/404.html
       
     - name: Deploy to gh pages
       run: |
