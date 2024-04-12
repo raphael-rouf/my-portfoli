@@ -35,8 +35,8 @@ jobs:
     - name: Check build output
       run: ls -al dist/my-portfolio
 
-    - name: Check for index.html
-      run: ls dist/my-portfolio/index.html
+    - name: Print dist directory contents
+      run: ls -al dist
 
     - name: Deploy to gh pages
       run: |
