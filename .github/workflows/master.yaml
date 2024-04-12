@@ -17,17 +17,9 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y nodejs npm
-        node --version
-        npm --version
 
     - name: Install Dependencies
       run: npm install
-      
-    - name: Install Angular CLI               
-      run: npm install -g @angular/cli
-
-    - name: Add angular-cli-ghpages
-      run: npm install -g angular-cli-ghpages
 
     - name: Build Angular App
       run: npm run build:prod
