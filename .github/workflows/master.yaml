@@ -33,10 +33,7 @@ jobs:
       run: ng build --base-href "https://raphael-rouf.github.io/my-portfolio/"
 
     - name: Check build output
-      run: ls -al dist/my-portfolio
-
-    - name: Print dist directory contents
-      run: ls -al dist
+      run: ls -al /home/runner/work/my-portfolio/my-portfolio/dist/my-portfolio
 
     - name: Deploy to gh pages
       run: |
