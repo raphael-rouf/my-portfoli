@@ -32,6 +32,12 @@ jobs:
     - name: Build Angular App
       run: ng build --base-href "https://raphael-rouf.github.io/my-portfolio/"
 
+    - name: Check build output
+      run: ls -al dist/my-portfolio
+
+    - name: Check for index.html
+      run: ls dist/my-portfolio/index.html
+
     - name: Deploy to gh pages
       run: |
         npx angular-cli-ghpages --dir=/dist/my-portfolio
