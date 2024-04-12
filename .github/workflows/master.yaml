@@ -30,7 +30,7 @@ jobs:
       run: npm install -g angular-cli-ghpages@2.0.0-beta.2
 
     - name: Build Angular App
-      run: ng build --prod --base-href "https://raphael-rouf.github.io/my-portfolio/"
+      run: ng build --base-href "https://raphael-rouf.github.io/my-portfolio/"
 
     - name: Deploy to gh pages
       run: |
