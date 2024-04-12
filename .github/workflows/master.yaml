@@ -30,7 +30,7 @@ jobs:
       run: npm install -g angular-cli-ghpages@2.0.0-beta.2
 
     - name: Build Angular App
-      run: ng build --prod
+      run: ng build
 
     - name: Deploy to gh pages
       run: |
