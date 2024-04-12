@@ -31,11 +31,11 @@ jobs:
       run: npm install -g angular-cli-ghpages
 
     - name: Build Angular App
-      run: npm run build && cp dist/my-portfolio/index.html dist/my-portfolio/404.html
+      run: npm run build:prod
       
     - name: Deploy to gh pages
       run: |
-        npx angular-cli-ghpages --dir=dist/my-portfolio
+        npx angular-cli-ghpages --dir=dist/
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
