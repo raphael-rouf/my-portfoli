@@ -25,13 +25,13 @@ jobs:
       - name: Build Angular App
         run: npm run build:prod
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to main Pages
         run: |
               git config --global user.email 'roufraphael@gmail.com'
               git config --global user.name 'raphael-rouf'
               git clone https://github.com/raphael-rouf/my-portfolio.git ${{ github.repository }}
               cd ${{ github.repository }}
-              git checkout gh-pages
+              git checkout main
               # Remove all existing files except .git directory
               git rm -rf .
 
@@ -45,5 +45,5 @@ jobs:
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/app/ .
               
               git add .
-              git commit -m "Deploy to GitHub Pages"
+              git commit -m "Deploy to main Pages"
               git push https://username:${{ secrets.GH_TOKEN }}@github.com/raphael-rouf/my-portfolio.git
