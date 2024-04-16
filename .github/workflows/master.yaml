@@ -34,10 +34,16 @@ jobs:
               git checkout gh-pages
               # Remove all existing files except .git directory
               git rm -rf .
+              
               # Copy Docs and its Files From docs folder in /home/runner/work/my-portfolio [GITHUB REPO NAME] in my-portfolio [APPLICATION NAME]
               cp -r /home/runner/work/my-portfolio/my-portfolio/docs/ ./docs
+              
               # Copy the 'app' folder from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/app ./docs/app
+
+              # Copy the 'main.ts' file from the 'src' directory to 'docs'
+              cp /home/runner/work/my-portfolio/my-portfolio/src/main.ts ./docs
+              
               git add .
               git commit -m "Deploy to GitHub Pages"
               git push https://username:${{ secrets.GH_TOKEN }}@github.com/raphael-rouf/my-portfolio.git
