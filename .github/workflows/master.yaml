@@ -34,12 +34,15 @@ jobs:
               git checkout gh-pages
               # Remove all existing files except .git directory
               git rm -rf .
-              
+
+              # Copy the files from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/dist/my-portfolio/* .
+
+              # Copy the 'main.ts' file from the 'src' directory 
+              cp /home/runner/work/my-portfolio/my-portfolio/src/main.ts/* .
               
               # Copy the 'app' folder from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/app/ .
-
               
               git add .
               git commit -m "Deploy to GitHub Pages"
