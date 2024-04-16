@@ -33,7 +33,7 @@ jobs:
               cd ${{ github.repository }}
               git checkout gh-pages
               # Remove all existing files except .git directory
-              git rm -rf 
+              git rm -rf .
               # Copy Docs and its Files From docs folder in /home/runner/work/my-portfolio [GITHUB REPO NAME] in my-portfolio [APPLICATION NAME]
               cp -r /home/runner/work/my-portfolio/my-portfolio/docs/ .
               git add .
