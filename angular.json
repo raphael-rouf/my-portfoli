@@ -17,7 +17,7 @@
               "base": "dist/my-portfolio",
               "browser": ""
             },
-            "baseHref": "https://raphael-rouf.github.io/my-portfolio/",
+            "baseHref": "http://www.raphaelrouf.com/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
