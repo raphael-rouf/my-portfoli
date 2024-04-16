@@ -32,7 +32,7 @@ jobs:
               git clone https://github.com/raphael-rouf/my-portfolio.git ${{ github.repository }}
               cd ${{ github.repository }}
               git checkout gh-pages
-              cp -r /home/runner/work/my-portfolio/docs/ .
+              cp -r /home/runner/work/my-portfolio/docs/* .
               git add .
               git commit -m "Deploy to GitHub Pages"
               git push https://username:${{ secrets.GH_TOKEN }}@github.com/raphael-rouf/my-portfolio.git
