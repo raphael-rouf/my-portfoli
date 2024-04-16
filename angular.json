@@ -15,7 +15,6 @@
           "options": {
             "outputPath": {
               "base": "docs",
-              "browser": ""
             },
             "baseHref": "https://raphael-rouf.github.io/my-portfolio/",
             "index": "src/index.html",
