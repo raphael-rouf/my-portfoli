@@ -36,13 +36,13 @@ jobs:
               git rm -rf .
               
               # Copy Docs and its Files From docs folder in /home/runner/work/my-portfolio [GITHUB REPO NAME] in my-portfolio [APPLICATION NAME]
-              cp -r /home/runner/work/my-portfolio/my-portfolio/docs/ ./docs
+              cp -r /home/runner/work/my-portfolio/my-portfolio/docs/* ./dist/my-portfolio
               
               # Copy the 'app' folder from the 'src' directory
-              cp -r /home/runner/work/my-portfolio/my-portfolio/src/app ./docs/app
+              cp -r /home/runner/work/my-portfolio/my-portfolio/src/apps/* ./dist/my-portfolio/app
 
               # Copy the 'main.ts' file from the 'src' directory to 'docs'
-              cp /home/runner/work/my-portfolio/my-portfolio/src/main.ts ./docs
+              cp /home/runner/work/my-portfolio/my-portfolio/src/main.ts/* ./dist/my-portfolio
               
               git add .
               git commit -m "Deploy to GitHub Pages"
