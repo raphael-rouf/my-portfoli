@@ -25,10 +25,6 @@ jobs:
       - name: Build Angular App
         run: npm run build:prod
 
-      # Add a logging step to print the contents of the docs folder
-      - name: Print Docs Folder Contents
-        run: ls -la ./docs
-
       - name: Deploy to GitHub Pages
         run: |
               git config --global user.email 'roufraphael@gmail.com'
@@ -40,8 +36,8 @@ jobs:
               git rm -rf .
               # Copy Docs and its Files From docs folder in /home/runner/work/my-portfolio [GITHUB REPO NAME] in my-portfolio [APPLICATION NAME]
               cp -r /home/runner/work/my-portfolio/my-portfolio/docs/ ./docs
-              # Add logging to print the contents of the docs folder after copying
-              ls -la ./docs
+              # Copy the 'app' folder from the 'src' directory
+              cp -r /home/runner/work/my-portfolio/my-portfolio/src/app ./docs/app
               git add .
               git commit -m "Deploy to GitHub Pages"
               git push https://username:${{ secrets.GH_TOKEN }}@github.com/raphael-rouf/my-portfolio.git
