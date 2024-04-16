@@ -1,0 +1,50 @@
+header{ /* Element wrapping around both of them */
+    display: flex; /* The two elements will be beside each other - creating two columns. Used when you want to create two columns, three columns etc */
+    justify-content: space-between; /* Create Space between these two elements and ends at the invisible line at our wrapper element */
+    /* white Space between the logo and the top - Can be done using margin or padding*/ 
+    align-items: center; /* All the elements between the header which is the a element and nav element, we will align them on the vertical access, the vertical center*/
+}
+
+nav {
+    margin: 4em; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;  /* The four elements will be beside each other - creating four columns. */
+    gap: 4.1em; /* Creates a gap between the columns */
+    margin: 0;
+}
+
+nav ul li a { /* When NOT on the  Page (Not Active) */
+    text-decoration: none;  /* get rid of underlines */
+    color: black; 
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative; /* The position is relative to its parent element container*/
+   }
+    /* When*/
+    nav ul li.active a:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;
+}
+
+nav ul li a:before { 
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(122, 122, 122);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+/* micro interactions*/
+nav ul li a:hover:before { 
+        width: 35%
+}
+
