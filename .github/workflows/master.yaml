@@ -35,13 +35,12 @@ jobs:
               # Remove all existing files except .git directory
               git rm -rf .
               
-              # Copy Docs and its Files From docs folder in /home/runner/work/my-portfolio [GITHUB REPO NAME] in my-portfolio [APPLICATION NAME]
-              cp -r /home/runner/work/my-portfolio/my-portfolio/dist/my-portfolio/* ./dist/my-portfolio
+              cp -r /home/runner/work/my-portfolio/my-portfolio/dist/my-portfolio/* .
               
               # Copy the 'app' folder from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/apps/* ./dist/my-portfolio/app
 
-              # Copy the 'main.ts' file from the 'src' directory to 'docs'
+              # Copy the 'main.ts' file from the 'src' directory to '/dist/my-portfolio'
               cp /home/runner/work/my-portfolio/my-portfolio/src/main.ts/* ./dist/my-portfolio
               
               git add .
