@@ -44,6 +44,9 @@ jobs:
               
               # Copy the 'app' folder from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/app/ .
+
+              chmod +x adjust-paths.sh
+              ./adjust-paths.sh
               
               git add .
               git commit -m "Deploy to gh-pages Pages"
