@@ -280,6 +280,6 @@ h1,h2,h3 {
 .thankyou {
     width: 377px;
     height: 143px;   
-    background: url('/assets/thankyou.JPG') lightgray 50% / cover no-repeat;
+    background: url('/my-portfolio/assets/thankyou.JPG') lightgray 50% / cover no-repeat;
     
 }
