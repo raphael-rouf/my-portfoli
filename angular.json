@@ -17,7 +17,7 @@
               "base": "dist/my-portfolio",
               "browser": ""
             },
-            "baseHref": "/my-portfolio",
+            "baseHref": "/my-portfolio/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
