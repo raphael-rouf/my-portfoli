@@ -92,7 +92,7 @@ p.details{
     width: 304px;
     height: 389px;
     flex-shrink: 0;
-    background: url('/assets/paper1.svg') lightgray 50% / cover no-repeat;
+    background: url('/my-portfolio/assets/paper1.svg') lightgray 50% / cover no-repeat;
     stroke-width: 1px;
     stroke: #000;
 }
