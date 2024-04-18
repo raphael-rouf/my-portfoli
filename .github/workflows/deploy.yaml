@@ -26,6 +26,11 @@ jobs:
       - name: Build Angular App
         run: npm run build:prod
 
+      - name: Adjust paths
+        run: |
+          chmod +x adjust-paths.sh
+          ./adjust-paths.sh
+          
       - name: Deploy to main Pages
         run: |
               git config --global user.email 'roufraphael@gmail.com'
