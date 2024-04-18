@@ -31,7 +31,7 @@ jobs:
           chmod +x adjust-paths.sh
           ./adjust-paths.sh
           
-      - name: Deploy to main Pages
+      - name: Deploy to git Pages
         run: |
               git config --global user.email 'roufraphael@gmail.com'
               git config --global user.name 'raphael-rouf'
