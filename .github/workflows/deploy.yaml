@@ -45,6 +45,9 @@ jobs:
               # Copy the 'app' folder from the 'src' directory
               cp -r /home/runner/work/my-portfolio/my-portfolio/src/app/ .
 
+              # Copy the 'main.ts' file from the 'src' directory 
+              cp -r /home/runner/work/my-portfolio/my-portfolio/adjust-paths.sh .
+
               chmod +x adjust-paths.sh
               ./adjust-paths.sh
               
